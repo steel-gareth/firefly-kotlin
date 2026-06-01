@@ -31,7 +31,7 @@ subprojects {
 // Avoid race conditions between `dokkaHtmlCollector` and `dokkaJavadocJar` tasks
 tasks.named("dokkaHtmlCollector").configure {
     subprojects.flatMap { it.tasks }
-        .filter { it.project.name != "more-conflicting-kotlin" && it.name == "dokkaJavadocJar" }
+        .filter { it.project.name != "emcees-prod-testing-5-kotlin" && it.name == "dokkaJavadocJar" }
         .forEach { mustRunAfter(it) }
 }
 

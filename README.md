@@ -1,29 +1,20 @@
-# More Conflicting Kotlin API Library
+# Emcees Prod Testing 5 Kotlin API Library
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin)](https://central.sonatype.com/artifact/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1)
-[![javadoc](https://javadoc.io/badge2/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1)
+[![Maven Central](https://img.shields.io/maven-central/v/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin)](https://central.sonatype.com/artifact/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1)
+[![javadoc](https://javadoc.io/badge2/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1)
 
-The More Conflicting Kotlin SDK provides convenient access to the More Conflicting REST API from applications written in Kotlin.
+The Emcees Prod Testing 5 Kotlin SDK provides convenient access to the [Emcees Prod Testing 5 REST API](https://firefly-iii.org) from applications written in Kotlin.
 
 It is generated with [Stainless](https://www.stainless.com/).
 
-## MCP Server
-
-Use the More Conflicting MCP Server to enable AI assistants to interact with this API, allowing them to explore endpoints, make test requests, and use documentation to help integrate this SDK into your application.
-
-[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=emcees-prod-testing-5-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImVtY2Vlcy1wcm9kLXRlc3RpbmctNS1tY3AiXSwiZW52Ijp7IlBFVFNUT1JFX0FQSV9LRVkiOiJNeSBBUEkgS2V5In19)
-[![Install in VS Code](https://img.shields.io/badge/_-Add_to_VS_Code-blue?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iI0VFRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzAuMjM1IDM5Ljg4NGEyLjQ5MSAyLjQ5MSAwIDAgMS0xLjc4MS0uNzNMMTIuNyAyNC43OGwtMy40NiAyLjYyNC0zLjQwNiAyLjU4MmExLjY2NSAxLjY2NSAwIDAgMS0xLjA4Mi4zMzggMS42NjQgMS42NjQgMCAwIDEtMS4wNDYtLjQzMWwtMi4yLTJhMS42NjYgMS42NjYgMCAwIDEgMC0yLjQ2M0w3LjQ1OCAyMCA0LjY3IDE3LjQ1MyAxLjUwNyAxNC41N2ExLjY2NSAxLjY2NSAwIDAgMSAwLTIuNDYzbDIuMi0yYTEuNjY1IDEuNjY1IDAgMCAxIDIuMTMtLjA5N2w2Ljg2MyA1LjIwOUwyOC40NTIuODQ0YTIuNDg4IDIuNDg4IDAgMCAxIDEuODQxLS43MjljLjM1MS4wMDkuNjk5LjA5MSAxLjAxOS4yNDVsOC4yMzYgMy45NjFhMi41IDIuNSAwIDAgMSAxLjQxNSAyLjI1M3YuMDk5LS4wNDVWMzMuMzd2LS4wNDUuMDk1YTIuNTAxIDIuNTAxIDAgMCAxLTEuNDE2IDIuMjU3bC04LjIzNSAzLjk2MWEyLjQ5MiAyLjQ5MiAwIDAgMS0xLjA3Ny4yNDZabS43MTYtMjguOTQ3LTExLjk0OCA5LjA2MiAxMS45NTIgOS4wNjUtLjAwNC0xOC4xMjdaIi8+PC9zdmc+)](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22emcees-prod-testing-5-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22emcees-prod-testing-5-mcp%22%5D%2C%22env%22%3A%7B%22PETSTORE_API_KEY%22%3A%22My%20API%20Key%22%7D%7D)
-
-> Note: You may need to set environment variables in your MCP client.
-
-KDocs are available on [javadoc.io](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/more-conflicting-kotlin/0.0.1).
+The REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1).
 
 ## Installation
 
 ### Gradle
 
 ```kotlin
-implementation("com.CONFIGURE_ME_emcees_prod_testing_5.api:more-conflicting-kotlin:0.0.1")
+implementation("com.CONFIGURE_ME_emcees_prod_testing_5.api:emcees-prod-testing-5-kotlin:0.0.1")
 ```
 
 ### Maven
@@ -31,7 +22,7 @@ implementation("com.CONFIGURE_ME_emcees_prod_testing_5.api:more-conflicting-kotl
 ```xml
 <dependency>
   <groupId>com.CONFIGURE_ME_emcees_prod_testing_5.api</groupId>
-  <artifactId>more-conflicting-kotlin</artifactId>
+  <artifactId>emcees-prod-testing-5-kotlin</artifactId>
   <version>0.0.1</version>
 </dependency>
 ```
@@ -43,16 +34,16 @@ This library requires Java 8 or later.
 ## Usage
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.models.Order
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties
-// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()
+// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
+// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
 
-val order: Order = client.store().orders().create()
+val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()
 ```
 
 ## Client configuration
@@ -60,45 +51,43 @@ val order: Order = client.store().orders().create()
 Configure the client using system properties or environment variables:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties
-// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()
+// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
+// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
 ```
 
 Or manually:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
-    .apiKey("My API Key")
-    .build()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
 ```
 
 Or using a combination of the two approaches:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
-    // Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties
-    // Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+    // Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
+    // Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
     .fromEnv()
-    .apiKey("My API Key")
+    .bearerToken("My Bearer Token")
     .build()
 ```
 
 See this table for the available options:
 
-| Setter    | System property                  | Environment variable        | Required | Default value                           |
-| --------- | -------------------------------- | --------------------------- | -------- | --------------------------------------- |
-| `apiKey`  | `moreconflicting.petstoreApiKey` | `PETSTORE_API_KEY`          | true     | -                                       |
-| `baseUrl` | `moreconflicting.baseUrl`        | `MORE_CONFLICTING_BASE_URL` | true     | `"https://petstore3.swagger.io/api/v3"` |
+| Setter        | System property                  | Environment variable                 | Required | Default value                        |
+| ------------- | -------------------------------- | ------------------------------------ | -------- | ------------------------------------ |
+| `bearerToken` | `emceesprodtesting5.bearerToken` | `EMCEES_PROD_TESTING_5_BEARER_TOKEN` | false    | -                                    |
+| `baseUrl`     | `emceesprodtesting5.baseUrl`     | `EMCEES_PROD_TESTING_5_BASE_URL`     | true     | `"https://demo.firefly-iii.org/api"` |
 
 System properties take precedence over environment variables.
 
@@ -111,9 +100,9 @@ System properties take precedence over environment variables.
 To temporarily use a modified client configuration, while reusing the same connection and thread pools, call `withOptions()` on any client or service:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
 
-val clientWithOptions: MoreConflictingClient = client.withOptions {
+val clientWithOptions: EmceesProdTesting5Client = client.withOptions {
     it.baseUrl("https://example.com")
     it.maxRetries(42)
 }
@@ -123,9 +112,9 @@ The `withOptions()` method does not affect the original client or service.
 
 ## Requests and responses
 
-To send a request to the More Conflicting API, build an instance of some `Params` class and pass it to the corresponding client method. When the response is received, it will be deserialized into an instance of a Kotlin class.
+To send a request to the Emcees Prod Testing 5 API, build an instance of some `Params` class and pass it to the corresponding client method. When the response is received, it will be deserialized into an instance of a Kotlin class.
 
-For example, `client.store().orders().create(...)` should be called with an instance of `OrderCreateParams`, and it will return an instance of `Order`.
+For example, `client.autocomplete().listAccounts(...)` should be called with an instance of `AutocompleteListAccountsParams`, and it will return an instance of `List<AutocompleteListAccountsResponse>`.
 
 ## Immutability
 
@@ -140,34 +129,74 @@ Because each class is immutable, builder modification will _never_ affect alread
 The default client is synchronous. To switch to asynchronous execution, call the `async()` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.models.Order
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties
-// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.fromEnv()
+// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
+// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
 
-val order: Order = client.async().store().orders().create()
+val response: List<AutocompleteListAccountsResponse> = client.async().autocomplete().listAccounts()
 ```
 
 Or create an asynchronous client from the beginning:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClientAsync
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClientAsync
-import com.configure_me_emcees_prod_testing_5.api.models.Order
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5ClientAsync
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClientAsync
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `moreconflicting.petstoreApiKey` and `moreconflicting.baseUrl` system properties
-// Or configures using the `PETSTORE_API_KEY` and `MORE_CONFLICTING_BASE_URL` environment variables
-val client: MoreConflictingClientAsync = MoreConflictingOkHttpClientAsync.fromEnv()
+// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
+// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
+val client: EmceesProdTesting5ClientAsync = EmceesProdTesting5OkHttpClientAsync.fromEnv()
 
-val order: Order = client.store().orders().create()
+val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()
 ```
 
 The asynchronous client supports the same options as the synchronous one, except most methods are [suspending](https://kotlinlang.org/docs/coroutines-guide.html).
+
+## Binary responses
+
+The SDK defines methods that return binary responses, which are used for API responses that shouldn't necessarily be parsed, like non-JSON data.
+
+These methods return [`HttpResponse`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpResponse.kt):
+
+```kotlin
+import com.configure_me_emcees_prod_testing_5.api.core.http.HttpResponse
+import com.configure_me_emcees_prod_testing_5.api.models.data.export.ExportExportAccountsParams
+
+val response: HttpResponse = client.data().export().exportAccounts()
+```
+
+To save the response content to a file, use the [`Files.copy(...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#copy-java.io.InputStream-java.nio.file.Path-java.nio.file.CopyOption...-) method:
+
+```kotlin
+import java.nio.file.Files
+import java.nio.file.Paths
+import java.nio.file.StandardCopyOption
+
+client.data().export().exportAccounts(params).use {
+    Files.copy(
+        it.body(),
+        Paths.get(path),
+        StandardCopyOption.REPLACE_EXISTING
+    )
+}
+```
+
+Or transfer the response content to any [`OutputStream`](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html):
+
+```kotlin
+import java.nio.file.Files
+import java.nio.file.Paths
+
+client.data().export().exportAccounts(params).use {
+    it.body().transferTo(Files.newOutputStream(Paths.get(path)))
+}
+```
 
 ## Raw responses
 
@@ -178,10 +207,10 @@ To access this data, prefix any HTTP method call on a client or service with `wi
 ```kotlin
 import com.configure_me_emcees_prod_testing_5.api.core.http.Headers
 import com.configure_me_emcees_prod_testing_5.api.core.http.HttpResponseFor
-import com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryParams
-import com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-val response: HttpResponseFor<StoreListInventoryResponse> = client.store().withRawResponse().listInventory()
+val response: HttpResponseFor<List<AutocompleteListAccountsResponse>> = client.autocomplete().withRawResponse().listAccounts()
 
 val statusCode: Int = response.statusCode()
 val headers: Headers = response.headers()
@@ -190,58 +219,58 @@ val headers: Headers = response.headers()
 You can still deserialize the response into an instance of a Kotlin class if needed:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-val parsedResponse: StoreListInventoryResponse = response.parse()
+val parsedResponse: List<AutocompleteListAccountsResponse> = response.parse()
 ```
 
 ## Error handling
 
 The SDK throws custom unchecked exception types:
 
-- [`MoreConflictingServiceException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingServiceException.kt): Base class for HTTP errors. See this table for which exception subclass is thrown for each HTTP status code:
+- [`EmceesProdTesting5ServiceException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5ServiceException.kt): Base class for HTTP errors. See this table for which exception subclass is thrown for each HTTP status code:
 
-  | Status | Exception                                                                                                                                                          |
-  | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | 400    | [`BadRequestException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/BadRequestException.kt)                     |
-  | 401    | [`UnauthorizedException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnauthorizedException.kt)                 |
-  | 403    | [`PermissionDeniedException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/PermissionDeniedException.kt)         |
-  | 404    | [`NotFoundException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/NotFoundException.kt)                         |
-  | 422    | [`UnprocessableEntityException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnprocessableEntityException.kt)   |
-  | 429    | [`RateLimitException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/RateLimitException.kt)                       |
-  | 5xx    | [`InternalServerException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/InternalServerException.kt)             |
-  | others | [`UnexpectedStatusCodeException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnexpectedStatusCodeException.kt) |
+  | Status | Exception                                                                                                                                                               |
+  | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | 400    | [`BadRequestException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/BadRequestException.kt)                     |
+  | 401    | [`UnauthorizedException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnauthorizedException.kt)                 |
+  | 403    | [`PermissionDeniedException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/PermissionDeniedException.kt)         |
+  | 404    | [`NotFoundException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/NotFoundException.kt)                         |
+  | 422    | [`UnprocessableEntityException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnprocessableEntityException.kt)   |
+  | 429    | [`RateLimitException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/RateLimitException.kt)                       |
+  | 5xx    | [`InternalServerException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/InternalServerException.kt)             |
+  | others | [`UnexpectedStatusCodeException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnexpectedStatusCodeException.kt) |
 
-- [`MoreConflictingIoException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingIoException.kt): I/O networking errors.
+- [`EmceesProdTesting5IoException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5IoException.kt): I/O networking errors.
 
-- [`MoreConflictingRetryableException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingRetryableException.kt): Generic error indicating a failure that could be retried by the client.
+- [`EmceesProdTesting5RetryableException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5RetryableException.kt): Generic error indicating a failure that could be retried by the client.
 
-- [`MoreConflictingInvalidDataException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingInvalidDataException.kt): Failure to interpret successfully parsed data. For example, when accessing a property that's supposed to be required, but the API unexpectedly omitted it from the response.
+- [`EmceesProdTesting5InvalidDataException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5InvalidDataException.kt): Failure to interpret successfully parsed data. For example, when accessing a property that's supposed to be required, but the API unexpectedly omitted it from the response.
 
-- [`MoreConflictingException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingException.kt): Base class for all exceptions. Most errors will result in one of the previously mentioned ones, but completely generic errors may be thrown using the base class.
+- [`EmceesProdTesting5Exception`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5Exception.kt): Base class for all exceptions. Most errors will result in one of the previously mentioned ones, but completely generic errors may be thrown using the base class.
 
 ## Logging
 
-Enable logging by setting the `MORE_CONFLICTING_LOG` environment variable to `info`:
+Enable logging by setting the `EMCEES_PROD_TESTING_5_LOG` environment variable to `info`:
 
 ```sh
-export MORE_CONFLICTING_LOG=info
+export EMCEES_PROD_TESTING_5_LOG=info
 ```
 
 Or to `debug` for more verbose logging:
 
 ```sh
-export MORE_CONFLICTING_LOG=debug
+export EMCEES_PROD_TESTING_5_LOG=debug
 ```
 
 Or configure the client manually using the `logLevel` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 import com.configure_me_emcees_prod_testing_5.api.core.LogLevel
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .logLevel(LogLevel.INFO)
     .build()
@@ -249,7 +278,7 @@ val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
 
 ## ProGuard and R8
 
-Although the SDK uses reflection, it is still usable with [ProGuard](https://github.com/Guardsquare/proguard) and [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because `more-conflicting-kotlin-core` is published with a [configuration file](more-conflicting-kotlin-core/src/main/resources/META-INF/proguard/more-conflicting-kotlin-core.pro) containing [keep rules](https://www.guardsquare.com/manual/configuration/usage).
+Although the SDK uses reflection, it is still usable with [ProGuard](https://github.com/Guardsquare/proguard) and [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because `emcees-prod-testing-5-kotlin-core` is published with a [configuration file](emcees-prod-testing-5-kotlin-core/src/main/resources/META-INF/proguard/emcees-prod-testing-5-kotlin-core.pro) containing [keep rules](https://www.guardsquare.com/manual/configuration/usage).
 
 ProGuard and R8 should automatically detect and use the published rules, but you can also manually copy the keep rules if necessary.
 
@@ -259,7 +288,7 @@ The SDK depends on [Jackson](https://github.com/FasterXML/jackson) for JSON seri
 
 The SDK throws an exception if it detects an incompatible Jackson version at runtime (e.g. if the default version was overridden in your Maven or Gradle config).
 
-If the SDK threw an exception, but you're _certain_ the version is compatible, then disable the version check using the `checkJacksonVersionCompatibility` on [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt).
+If the SDK threw an exception, but you're _certain_ the version is compatible, then disable the version check using the `checkJacksonVersionCompatibility` on [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt).
 
 > [!CAUTION]
 > We make no guarantee that the SDK works correctly when the Jackson version check is disabled.
@@ -285,10 +314,10 @@ The API may also explicitly instruct the SDK to retry or not retry a request.
 To set a custom number of retries, configure the client using the `maxRetries` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .maxRetries(4)
     .build()
@@ -301,19 +330,19 @@ Requests time out after 1 minute by default.
 To set a custom timeout, configure the method call using the `timeout` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.store.StoreListInventoryResponse
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-val response: StoreListInventoryResponse = client.store().listInventory(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())
+val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())
 ```
 
 Or configure the default for all method calls at the client level:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 import java.time.Duration
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .timeout(Duration.ofSeconds(30))
     .build()
@@ -324,12 +353,12 @@ val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
 To route requests through a proxy, configure the client using the `proxy` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 import java.net.InetSocketAddress
 import java.net.Proxy
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .proxy(Proxy(
       Proxy.Type.HTTP, InetSocketAddress(
@@ -342,11 +371,11 @@ val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
 If the proxy responds with `407 Proxy Authentication Required`, supply credentials by also configuring `proxyAuthenticator`:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 import com.configure_me_emcees_prod_testing_5.api.core.http.ProxyAuthenticator
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .proxy(...)
     // Or a custom implementation of `ProxyAuthenticator`.
@@ -359,11 +388,11 @@ val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
 To customize the underlying OkHttp connection pool, configure the client using the `maxIdleConnections` and `keepAliveDuration` methods:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 import java.time.Duration
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     // If `maxIdleConnections` is set, then `keepAliveDuration` must be set, and vice versa.
     .maxIdleConnections(10)
@@ -382,10 +411,10 @@ If both options are unset, OkHttp's default connection pool settings are used.
 To configure how HTTPS connections are secured, configure the client using the `sslSocketFactory`, `trustManager`, and `hostnameVerifier` methods:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     // If `sslSocketFactory` is set, then `trustManager` must be set, and vice versa.
     .sslSocketFactory(yourSSLSocketFactory)
@@ -394,19 +423,33 @@ val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
     .build()
 ```
 
+### Environments
+
+The SDK sends requests to the production by default. To send requests to a different environment, configure the client like so:
+
+```kotlin
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+    .fromEnv()
+    .environment1()
+    .build()
+```
+
 ### Custom HTTP client
 
 The SDK consists of three artifacts:
 
-- `more-conflicting-kotlin-core`
+- `emcees-prod-testing-5-kotlin-core`
   - Contains core SDK logic
   - Does not depend on [OkHttp](https://square.github.io/okhttp)
-  - Exposes [`MoreConflictingClient`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClient.kt), [`MoreConflictingClientAsync`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsync.kt), [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt), and [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), all of which can work with any HTTP client
-- `more-conflicting-kotlin-client-okhttp`
+  - Exposes [`EmceesProdTesting5Client`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5Client.kt), [`EmceesProdTesting5ClientAsync`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsync.kt), [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt), and [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), all of which can work with any HTTP client
+- `emcees-prod-testing-5-kotlin-client-okhttp`
   - Depends on [OkHttp](https://square.github.io/okhttp)
-  - Exposes [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) and [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), which provide a way to construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) and [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), respectively, using OkHttp
-- `more-conflicting-kotlin`
-  - Depends on and exposes the APIs of both `more-conflicting-kotlin-core` and `more-conflicting-kotlin-client-okhttp`
+  - Exposes [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) and [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), which provide a way to construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) and [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), respectively, using OkHttp
+- `emcees-prod-testing-5-kotlin`
+  - Depends on and exposes the APIs of both `emcees-prod-testing-5-kotlin-core` and `emcees-prod-testing-5-kotlin-client-okhttp`
   - Does not have its own logic
 
 This structure allows replacing the SDK's default HTTP client without pulling in unnecessary dependencies.
@@ -418,17 +461,17 @@ This structure allows replacing the SDK's default HTTP client without pulling in
 
 To use a customized `OkHttpClient`:
 
-1. Replace your [`more-conflicting-kotlin` dependency](#installation) with `more-conflicting-kotlin-core`
-2. Copy `more-conflicting-kotlin-client-okhttp`'s [`OkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/OkHttpClient.kt) class into your code and customize it
-3. Construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) or [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), similarly to [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), using your customized client
+1. Replace your [`emcees-prod-testing-5-kotlin` dependency](#installation) with `emcees-prod-testing-5-kotlin-core`
+2. Copy `emcees-prod-testing-5-kotlin-client-okhttp`'s [`OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/OkHttpClient.kt) class into your code and customize it
+3. Construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) or [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), similarly to [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), using your customized client
 
 ### Completely custom HTTP client
 
 To use a completely custom HTTP client:
 
-1. Replace your [`more-conflicting-kotlin` dependency](#installation) with `more-conflicting-kotlin-core`
-2. Write a class that implements the [`HttpClient`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpClient.kt) interface
-3. Construct [`MoreConflictingClientImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientImpl.kt) or [`MoreConflictingClientAsyncImpl`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/MoreConflictingClientAsyncImpl.kt), similarly to [`MoreConflictingOkHttpClient`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClient.kt) or [`MoreConflictingOkHttpClientAsync`](more-conflicting-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/MoreConflictingOkHttpClientAsync.kt), using your new client class
+1. Replace your [`emcees-prod-testing-5-kotlin` dependency](#installation) with `emcees-prod-testing-5-kotlin-core`
+2. Write a class that implements the [`HttpClient`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpClient.kt) interface
+3. Construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) or [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), similarly to [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), using your new client class
 
 ## Undocumented API functionality
 
@@ -440,9 +483,9 @@ To set undocumented parameters, call the `putAdditionalHeader`, `putAdditionalQu
 
 ```kotlin
 import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
 
-val params: OrderCreateParams = OrderCreateParams.builder()
+val params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder()
     .putAdditionalHeader("Secret-Header", "42")
     .putAdditionalQueryParam("secret_query_param", "42")
     .putAdditionalBodyProperty("secretProperty", JsonValue.from("42"))
@@ -451,15 +494,15 @@ val params: OrderCreateParams = OrderCreateParams.builder()
 
 These can be accessed on the built object later using the `_additionalHeaders()`, `_additionalQueryParams()`, and `_additionalBodyProperties()` methods.
 
-To set a documented parameter or property to an undocumented or not yet supported _value_, pass a [`JsonValue`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) object to its setter:
+To set a documented parameter or property to an undocumented or not yet supported _value_, pass a [`JsonValue`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) object to its setter:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
 
-val params: OrderCreateParams = OrderCreateParams.builder().build()
+val params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder().build()
 ```
 
-The most straightforward way to create a [`JsonValue`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) is using its `from(...)` method:
+The most straightforward way to create a [`JsonValue`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) is using its `from(...)` method:
 
 ```kotlin
 import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
@@ -496,20 +539,17 @@ val complexValue: JsonValue = JsonValue.from(mapOf(
 
 Normally a `Builder` class's `build` method will throw [`IllegalStateException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html) if any required parameter or property is unset.
 
-To forcibly omit a required parameter or property, pass [`JsonMissing`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt):
+To forcibly omit a required parameter or property, pass [`JsonMissing`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt):
 
 ```kotlin
 import com.configure_me_emcees_prod_testing_5.api.core.JsonMissing
-import com.configure_me_emcees_prod_testing_5.api.models.pets.Pet
-import com.configure_me_emcees_prod_testing_5.api.models.pets.PetCreateParams
-import com.configure_me_emcees_prod_testing_5.api.models.store.orders.OrderCreateParams
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.configure_me_emcees_prod_testing_5.api.models.chart.account.AccountRetrieveOverviewParams
+import java.time.LocalDate
 
-val params: OrderCreateParams = PetCreateParams.builder()
-    .pet(Pet.builder()
-        .name("doggie")
-        .addPhotoUrl("string")
-        .build())
-    .name(JsonMissing.of())
+val params: AutocompleteListAccountsParams = AccountRetrieveOverviewParams.builder()
+    .start(LocalDate.parse("2019-12-27"))
+    .end(JsonMissing.of())
     .build()
 ```
 
@@ -523,7 +563,7 @@ import com.configure_me_emcees_prod_testing_5.api.core.JsonNull
 import com.configure_me_emcees_prod_testing_5.api.core.JsonNumber
 import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
 
-val additionalProperties: Map<String, JsonValue> = client.store().orders().create(params)._additionalProperties()
+val additionalProperties: Map<String, JsonValue> = client.accounts().create(params)._additionalProperties()
 val secretPropertyValue: JsonValue = additionalProperties.get("secretProperty")
 
 val result = when (secretPropertyValue) {
@@ -540,19 +580,19 @@ To access a property's raw JSON value, which may be undocumented, call its `_` p
 ```kotlin
 import com.configure_me_emcees_prod_testing_5.api.core.JsonField
 
-val field: JsonField<Any> = client.store().orders().create(params)._field()
+val name: JsonField<String> = client.accounts().create(params)._name()
 
-if (field.isMissing()) {
+if (name.isMissing()) {
   // The property is absent from the JSON response
-} else if (field.isNull()) {
+} else if (name.isNull()) {
   // The property was set to literal null
 } else {
   // Check if value was provided as a string
   // Other methods include `asNumber()`, `asBoolean()`, etc.
-  val jsonString: String? = field.asString();
+  val jsonString: String? = name.asString();
 
   // Try to deserialize into a custom type
-  val myObject: MyClass = field.asUnknown()!!.convert(MyClass::class.java)
+  val myObject: MyClass = name.asUnknown()!!.convert(MyClass::class.java)
 }
 ```
 
@@ -560,33 +600,33 @@ if (field.isMissing()) {
 
 In rare cases, the API may return a response that doesn't match the expected type. For example, the SDK may expect a property to contain a `String`, but the API could return something else.
 
-By default, the SDK will not throw an exception in this case. It will throw [`MoreConflictingInvalidDataException`](more-conflicting-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/MoreConflictingInvalidDataException.kt) only if you directly access the property.
+By default, the SDK will not throw an exception in this case. It will throw [`EmceesProdTesting5InvalidDataException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5InvalidDataException.kt) only if you directly access the property.
 
 Validating the response is _not_ forwards compatible with new types from the API for existing fields.
 
 If you would still prefer to check that the response is completely well-typed upfront, then either call `validate()`:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.Order
+import com.configure_me_emcees_prod_testing_5.api.models.accounts.AccountSingle
 
-val order: Order = client.store().orders().create(params).validate()
+val accountSingle: AccountSingle = client.accounts().create(params).validate()
 ```
 
 Or configure the method call to validate the response using the `responseValidation` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.Order
+import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
 
-val order: Order = client.store().orders().create(RequestOptions.builder().responseValidation(true).build())
+val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().responseValidation(true).build())
 ```
 
 Or configure the default for all method calls at the client level:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.MoreConflictingClient
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.MoreConflictingOkHttpClient
+import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
 
-val client: MoreConflictingClient = MoreConflictingOkHttpClient.builder()
+val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
     .fromEnv()
     .responseValidation(true)
     .build()

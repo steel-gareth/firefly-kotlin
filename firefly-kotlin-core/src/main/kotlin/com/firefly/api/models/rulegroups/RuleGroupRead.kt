@@ -1,0 +1,643 @@
+// File generated from our OpenAPI spec by Stainless.
+
+package com.firefly.api.models.rulegroups
+
+import com.fasterxml.jackson.annotation.JsonAnyGetter
+import com.fasterxml.jackson.annotation.JsonAnySetter
+import com.fasterxml.jackson.annotation.JsonCreator
+import com.fasterxml.jackson.annotation.JsonProperty
+import com.firefly.api.core.ExcludeMissing
+import com.firefly.api.core.JsonField
+import com.firefly.api.core.JsonMissing
+import com.firefly.api.core.JsonValue
+import com.firefly.api.core.checkRequired
+import com.firefly.api.errors.FireflyInvalidDataException
+import com.firefly.api.models.attachments.ObjectLink
+import java.time.OffsetDateTime
+import java.util.Collections
+import java.util.Objects
+
+class RuleGroupRead
+@JsonCreator(mode = JsonCreator.Mode.DISABLED)
+private constructor(
+    private val id: JsonField<String>,
+    private val attributes: JsonField<Attributes>,
+    private val links: JsonField<ObjectLink>,
+    private val type: JsonField<String>,
+    private val additionalProperties: MutableMap<String, JsonValue>,
+) {
+
+    @JsonCreator
+    private constructor(
+        @JsonProperty("id") @ExcludeMissing id: JsonField<String> = JsonMissing.of(),
+        @JsonProperty("attributes")
+        @ExcludeMissing
+        attributes: JsonField<Attributes> = JsonMissing.of(),
+        @JsonProperty("links") @ExcludeMissing links: JsonField<ObjectLink> = JsonMissing.of(),
+        @JsonProperty("type") @ExcludeMissing type: JsonField<String> = JsonMissing.of(),
+    ) : this(id, attributes, links, type, mutableMapOf())
+
+    /**
+     * @throws FireflyInvalidDataException if the JSON field has an unexpected type or is
+     *   unexpectedly missing or null (e.g. if the server responded with an unexpected value).
+     */
+    fun id(): String = id.getRequired("id")
+
+    /**
+     * @throws FireflyInvalidDataException if the JSON field has an unexpected type or is
+     *   unexpectedly missing or null (e.g. if the server responded with an unexpected value).
+     */
+    fun attributes(): Attributes = attributes.getRequired("attributes")
+
+    /**
+     * @throws FireflyInvalidDataException if the JSON field has an unexpected type or is
+     *   unexpectedly missing or null (e.g. if the server responded with an unexpected value).
+     */
+    fun links(): ObjectLink = links.getRequired("links")
+
+    /**
+     * Immutable value
+     *
+     * @throws FireflyInvalidDataException if the JSON field has an unexpected type or is
+     *   unexpectedly missing or null (e.g. if the server responded with an unexpected value).
+     */
+    fun type(): String = type.getRequired("type")
+
+    /**
+     * Returns the raw JSON value of [id].
+     *
+     * Unlike [id], this method doesn't throw if the JSON field has an unexpected type.
+     */
+    @JsonProperty("id") @ExcludeMissing fun _id(): JsonField<String> = id
+
+    /**
+     * Returns the raw JSON value of [attributes].
+     *
+     * Unlike [attributes], this method doesn't throw if the JSON field has an unexpected type.
+     */
+    @JsonProperty("attributes")
+    @ExcludeMissing
+    fun _attributes(): JsonField<Attributes> = attributes
+
+    /**
+     * Returns the raw JSON value of [links].
+     *
+     * Unlike [links], this method doesn't throw if the JSON field has an unexpected type.
+     */
+    @JsonProperty("links") @ExcludeMissing fun _links(): JsonField<ObjectLink> = links
+
+    /**
+     * Returns the raw JSON value of [type].
+     *
+     * Unlike [type], this method doesn't throw if the JSON field has an unexpected type.
+     */
+    @JsonProperty("type") @ExcludeMissing fun _type(): JsonField<String> = type
+
+    @JsonAnySetter
+    private fun putAdditionalProperty(key: String, value: JsonValue) {
+        additionalProperties.put(key, value)
+    }
+
+    @JsonAnyGetter
+    @ExcludeMissing
+    fun _additionalProperties(): Map<String, JsonValue> =
+        Collections.unmodifiableMap(additionalProperties)
+
+    fun toBuilder() = Builder().from(this)
+
+    companion object {
+
+        /**
+         * Returns a mutable builder for constructing an instance of [RuleGroupRead].
+         *
+         * The following fields are required:
+         * ```kotlin
+         * .id()
+         * .attributes()
+         * .links()
+         * .type()
+         * ```
+         */
+        fun builder() = Builder()
+    }
+
+    /** A builder for [RuleGroupRead]. */
+    class Builder internal constructor() {
+
+        private var id: JsonField<String>? = null
+        private var attributes: JsonField<Attributes>? = null
+        private var links: JsonField<ObjectLink>? = null
+        private var type: JsonField<String>? = null
+        private var additionalProperties: MutableMap<String, JsonValue> = mutableMapOf()
+
+        internal fun from(ruleGroupRead: RuleGroupRead) = apply {
+            id = ruleGroupRead.id
+            attributes = ruleGroupRead.attributes
+            links = ruleGroupRead.links
+            type = ruleGroupRead.type
+            additionalProperties = ruleGroupRead.additionalProperties.toMutableMap()
+        }
+
+        fun id(id: String) = id(JsonField.of(id))
+
+        /**
+         * Sets [Builder.id] to an arbitrary JSON value.
+         *
+         * You should usually call [Builder.id] with a well-typed [String] value instead. This
+         * method is primarily for setting the field to an undocumented or not yet supported value.
+         */
+        fun id(id: JsonField<String>) = apply { this.id = id }
+
+        fun attributes(attributes: Attributes) = attributes(JsonField.of(attributes))
+
+        /**
+         * Sets [Builder.attributes] to an arbitrary JSON value.
+         *
+         * You should usually call [Builder.attributes] with a well-typed [Attributes] value
+         * instead. This method is primarily for setting the field to an undocumented or not yet
+         * supported value.
+         */
+        fun attributes(attributes: JsonField<Attributes>) = apply { this.attributes = attributes }
+
+        fun links(links: ObjectLink) = links(JsonField.of(links))
+
+        /**
+         * Sets [Builder.links] to an arbitrary JSON value.
+         *
+         * You should usually call [Builder.links] with a well-typed [ObjectLink] value instead.
+         * This method is primarily for setting the field to an undocumented or not yet supported
+         * value.
+         */
+        fun links(links: JsonField<ObjectLink>) = apply { this.links = links }
+
+        /** Immutable value */
+        fun type(type: String) = type(JsonField.of(type))
+
+        /**
+         * Sets [Builder.type] to an arbitrary JSON value.
+         *
+         * You should usually call [Builder.type] with a well-typed [String] value instead. This
+         * method is primarily for setting the field to an undocumented or not yet supported value.
+         */
+        fun type(type: JsonField<String>) = apply { this.type = type }
+
+        fun additionalProperties(additionalProperties: Map<String, JsonValue>) = apply {
+            this.additionalProperties.clear()
+            putAllAdditionalProperties(additionalProperties)
+        }
+
+        fun putAdditionalProperty(key: String, value: JsonValue) = apply {
+            additionalProperties.put(key, value)
+        }
+
+        fun putAllAdditionalProperties(additionalProperties: Map<String, JsonValue>) = apply {
+            this.additionalProperties.putAll(additionalProperties)
+        }
+
+        fun removeAdditionalProperty(key: String) = apply { additionalProperties.remove(key) }
+
+        fun removeAllAdditionalProperties(keys: Set<String>) = apply {
+            keys.forEach(::removeAdditionalProperty)
+        }
+
+        /**
+         * Returns an immutable instance of [RuleGroupRead].
+         *
+         * Further updates to this [Builder] will not mutate the returned instance.
+         *
+         * The following fields are required:
+         * ```kotlin
+         * .id()
+         * .attributes()
+         * .links()
+         * .type()
+         * ```
+         *
+         * @throws IllegalStateException if any required field is unset.
+         */
+        fun build(): RuleGroupRead =
+            RuleGroupRead(
+                checkRequired("id", id),
+                checkRequired("attributes", attributes),
+                checkRequired("links", links),
+                checkRequired("type", type),
+                additionalProperties.toMutableMap(),
+            )
+    }
+
+    private var validated: Boolean = false
+
+    /**
+     * Validates that the types of all values in this object match their expected types recursively.
+     *
+     * This method is _not_ forwards compatible with new types from the API for existing fields.
+     *
+     * @throws FireflyInvalidDataException if any value type in this object doesn't match its
+     *   expected type.
+     */
+    fun validate(): RuleGroupRead = apply {
+        if (validated) {
+            return@apply
+        }
+
+        id()
+        attributes().validate()
+        links().validate()
+        type()
+        validated = true
+    }
+
+    fun isValid(): Boolean =
+        try {
+            validate()
+            true
+        } catch (e: FireflyInvalidDataException) {
+            false
+        }
+
+    /**
+     * Returns a score indicating how many valid values are contained in this object recursively.
+     *
+     * Used for best match union deserialization.
+     */
+    internal fun validity(): Int =
+        (if (id.asKnown() == null) 0 else 1) +
+            (attributes.asKnown()?.validity() ?: 0) +
+            (links.asKnown()?.validity() ?: 0) +
+            (if (type.asKnown() == null) 0 else 1)
+
+    class Attributes
+    @JsonCreator(mode = JsonCreator.Mode.DISABLED)
+    private constructor(
+        private val title: JsonField<String>,
+        private val active: JsonField<Boolean>,
+        private val createdAt: JsonField<OffsetDateTime>,
+        private val description: JsonField<String>,
+        private val order: JsonField<Int>,
+        private val updatedAt: JsonField<OffsetDateTime>,
+        private val additionalProperties: MutableMap<String, JsonValue>,
+    ) {
+
+        @JsonCreator
+        private constructor(
+            @JsonProperty("title") @ExcludeMissing title: JsonField<String> = JsonMissing.of(),
+            @JsonProperty("active") @ExcludeMissing active: JsonField<Boolean> = JsonMissing.of(),
+            @JsonProperty("created_at")
+            @ExcludeMissing
+            createdAt: JsonField<OffsetDateTime> = JsonMissing.of(),
+            @JsonProperty("description")
+            @ExcludeMissing
+            description: JsonField<String> = JsonMissing.of(),
+            @JsonProperty("order") @ExcludeMissing order: JsonField<Int> = JsonMissing.of(),
+            @JsonProperty("updated_at")
+            @ExcludeMissing
+            updatedAt: JsonField<OffsetDateTime> = JsonMissing.of(),
+        ) : this(title, active, createdAt, description, order, updatedAt, mutableMapOf())
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type or is
+         *   unexpectedly missing or null (e.g. if the server responded with an unexpected value).
+         */
+        fun title(): String = title.getRequired("title")
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type (e.g. if the
+         *   server responded with an unexpected value).
+         */
+        fun active(): Boolean? = active.getNullable("active")
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type (e.g. if the
+         *   server responded with an unexpected value).
+         */
+        fun createdAt(): OffsetDateTime? = createdAt.getNullable("created_at")
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type (e.g. if the
+         *   server responded with an unexpected value).
+         */
+        fun description(): String? = description.getNullable("description")
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type (e.g. if the
+         *   server responded with an unexpected value).
+         */
+        fun order(): Int? = order.getNullable("order")
+
+        /**
+         * @throws FireflyInvalidDataException if the JSON field has an unexpected type (e.g. if the
+         *   server responded with an unexpected value).
+         */
+        fun updatedAt(): OffsetDateTime? = updatedAt.getNullable("updated_at")
+
+        /**
+         * Returns the raw JSON value of [title].
+         *
+         * Unlike [title], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("title") @ExcludeMissing fun _title(): JsonField<String> = title
+
+        /**
+         * Returns the raw JSON value of [active].
+         *
+         * Unlike [active], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("active") @ExcludeMissing fun _active(): JsonField<Boolean> = active
+
+        /**
+         * Returns the raw JSON value of [createdAt].
+         *
+         * Unlike [createdAt], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("created_at")
+        @ExcludeMissing
+        fun _createdAt(): JsonField<OffsetDateTime> = createdAt
+
+        /**
+         * Returns the raw JSON value of [description].
+         *
+         * Unlike [description], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("description")
+        @ExcludeMissing
+        fun _description(): JsonField<String> = description
+
+        /**
+         * Returns the raw JSON value of [order].
+         *
+         * Unlike [order], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("order") @ExcludeMissing fun _order(): JsonField<Int> = order
+
+        /**
+         * Returns the raw JSON value of [updatedAt].
+         *
+         * Unlike [updatedAt], this method doesn't throw if the JSON field has an unexpected type.
+         */
+        @JsonProperty("updated_at")
+        @ExcludeMissing
+        fun _updatedAt(): JsonField<OffsetDateTime> = updatedAt
+
+        @JsonAnySetter
+        private fun putAdditionalProperty(key: String, value: JsonValue) {
+            additionalProperties.put(key, value)
+        }
+
+        @JsonAnyGetter
+        @ExcludeMissing
+        fun _additionalProperties(): Map<String, JsonValue> =
+            Collections.unmodifiableMap(additionalProperties)
+
+        fun toBuilder() = Builder().from(this)
+
+        companion object {
+
+            /**
+             * Returns a mutable builder for constructing an instance of [Attributes].
+             *
+             * The following fields are required:
+             * ```kotlin
+             * .title()
+             * ```
+             */
+            fun builder() = Builder()
+        }
+
+        /** A builder for [Attributes]. */
+        class Builder internal constructor() {
+
+            private var title: JsonField<String>? = null
+            private var active: JsonField<Boolean> = JsonMissing.of()
+            private var createdAt: JsonField<OffsetDateTime> = JsonMissing.of()
+            private var description: JsonField<String> = JsonMissing.of()
+            private var order: JsonField<Int> = JsonMissing.of()
+            private var updatedAt: JsonField<OffsetDateTime> = JsonMissing.of()
+            private var additionalProperties: MutableMap<String, JsonValue> = mutableMapOf()
+
+            internal fun from(attributes: Attributes) = apply {
+                title = attributes.title
+                active = attributes.active
+                createdAt = attributes.createdAt
+                description = attributes.description
+                order = attributes.order
+                updatedAt = attributes.updatedAt
+                additionalProperties = attributes.additionalProperties.toMutableMap()
+            }
+
+            fun title(title: String) = title(JsonField.of(title))
+
+            /**
+             * Sets [Builder.title] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.title] with a well-typed [String] value instead.
+             * This method is primarily for setting the field to an undocumented or not yet
+             * supported value.
+             */
+            fun title(title: JsonField<String>) = apply { this.title = title }
+
+            fun active(active: Boolean) = active(JsonField.of(active))
+
+            /**
+             * Sets [Builder.active] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.active] with a well-typed [Boolean] value instead.
+             * This method is primarily for setting the field to an undocumented or not yet
+             * supported value.
+             */
+            fun active(active: JsonField<Boolean>) = apply { this.active = active }
+
+            fun createdAt(createdAt: OffsetDateTime) = createdAt(JsonField.of(createdAt))
+
+            /**
+             * Sets [Builder.createdAt] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.createdAt] with a well-typed [OffsetDateTime] value
+             * instead. This method is primarily for setting the field to an undocumented or not yet
+             * supported value.
+             */
+            fun createdAt(createdAt: JsonField<OffsetDateTime>) = apply {
+                this.createdAt = createdAt
+            }
+
+            fun description(description: String?) = description(JsonField.ofNullable(description))
+
+            /**
+             * Sets [Builder.description] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.description] with a well-typed [String] value
+             * instead. This method is primarily for setting the field to an undocumented or not yet
+             * supported value.
+             */
+            fun description(description: JsonField<String>) = apply {
+                this.description = description
+            }
+
+            fun order(order: Int) = order(JsonField.of(order))
+
+            /**
+             * Sets [Builder.order] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.order] with a well-typed [Int] value instead. This
+             * method is primarily for setting the field to an undocumented or not yet supported
+             * value.
+             */
+            fun order(order: JsonField<Int>) = apply { this.order = order }
+
+            fun updatedAt(updatedAt: OffsetDateTime) = updatedAt(JsonField.of(updatedAt))
+
+            /**
+             * Sets [Builder.updatedAt] to an arbitrary JSON value.
+             *
+             * You should usually call [Builder.updatedAt] with a well-typed [OffsetDateTime] value
+             * instead. This method is primarily for setting the field to an undocumented or not yet
+             * supported value.
+             */
+            fun updatedAt(updatedAt: JsonField<OffsetDateTime>) = apply {
+                this.updatedAt = updatedAt
+            }
+
+            fun additionalProperties(additionalProperties: Map<String, JsonValue>) = apply {
+                this.additionalProperties.clear()
+                putAllAdditionalProperties(additionalProperties)
+            }
+
+            fun putAdditionalProperty(key: String, value: JsonValue) = apply {
+                additionalProperties.put(key, value)
+            }
+
+            fun putAllAdditionalProperties(additionalProperties: Map<String, JsonValue>) = apply {
+                this.additionalProperties.putAll(additionalProperties)
+            }
+
+            fun removeAdditionalProperty(key: String) = apply { additionalProperties.remove(key) }
+
+            fun removeAllAdditionalProperties(keys: Set<String>) = apply {
+                keys.forEach(::removeAdditionalProperty)
+            }
+
+            /**
+             * Returns an immutable instance of [Attributes].
+             *
+             * Further updates to this [Builder] will not mutate the returned instance.
+             *
+             * The following fields are required:
+             * ```kotlin
+             * .title()
+             * ```
+             *
+             * @throws IllegalStateException if any required field is unset.
+             */
+            fun build(): Attributes =
+                Attributes(
+                    checkRequired("title", title),
+                    active,
+                    createdAt,
+                    description,
+                    order,
+                    updatedAt,
+                    additionalProperties.toMutableMap(),
+                )
+        }
+
+        private var validated: Boolean = false
+
+        /**
+         * Validates that the types of all values in this object match their expected types
+         * recursively.
+         *
+         * This method is _not_ forwards compatible with new types from the API for existing fields.
+         *
+         * @throws FireflyInvalidDataException if any value type in this object doesn't match its
+         *   expected type.
+         */
+        fun validate(): Attributes = apply {
+            if (validated) {
+                return@apply
+            }
+
+            title()
+            active()
+            createdAt()
+            description()
+            order()
+            updatedAt()
+            validated = true
+        }
+
+        fun isValid(): Boolean =
+            try {
+                validate()
+                true
+            } catch (e: FireflyInvalidDataException) {
+                false
+            }
+
+        /**
+         * Returns a score indicating how many valid values are contained in this object
+         * recursively.
+         *
+         * Used for best match union deserialization.
+         */
+        internal fun validity(): Int =
+            (if (title.asKnown() == null) 0 else 1) +
+                (if (active.asKnown() == null) 0 else 1) +
+                (if (createdAt.asKnown() == null) 0 else 1) +
+                (if (description.asKnown() == null) 0 else 1) +
+                (if (order.asKnown() == null) 0 else 1) +
+                (if (updatedAt.asKnown() == null) 0 else 1)
+
+        override fun equals(other: Any?): Boolean {
+            if (this === other) {
+                return true
+            }
+
+            return other is Attributes &&
+                title == other.title &&
+                active == other.active &&
+                createdAt == other.createdAt &&
+                description == other.description &&
+                order == other.order &&
+                updatedAt == other.updatedAt &&
+                additionalProperties == other.additionalProperties
+        }
+
+        private val hashCode: Int by lazy {
+            Objects.hash(
+                title,
+                active,
+                createdAt,
+                description,
+                order,
+                updatedAt,
+                additionalProperties,
+            )
+        }
+
+        override fun hashCode(): Int = hashCode
+
+        override fun toString() =
+            "Attributes{title=$title, active=$active, createdAt=$createdAt, description=$description, order=$order, updatedAt=$updatedAt, additionalProperties=$additionalProperties}"
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) {
+            return true
+        }
+
+        return other is RuleGroupRead &&
+            id == other.id &&
+            attributes == other.attributes &&
+            links == other.links &&
+            type == other.type &&
+            additionalProperties == other.additionalProperties
+    }
+
+    private val hashCode: Int by lazy {
+        Objects.hash(id, attributes, links, type, additionalProperties)
+    }
+
+    override fun hashCode(): Int = hashCode
+
+    override fun toString() =
+        "RuleGroupRead{id=$id, attributes=$attributes, links=$links, type=$type, additionalProperties=$additionalProperties}"
+}

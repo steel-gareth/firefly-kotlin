@@ -8,7 +8,7 @@ repositories {
 }
 
 allprojects {
-    group = "com.CONFIGURE_ME_emcees_prod_testing_5.api"
+    group = "com.firefly.api"
     version = "0.0.1"
 }
 
@@ -31,7 +31,7 @@ subprojects {
 // Avoid race conditions between `dokkaHtmlCollector` and `dokkaJavadocJar` tasks
 tasks.named("dokkaHtmlCollector").configure {
     subprojects.flatMap { it.tasks }
-        .filter { it.project.name != "emcees-prod-testing-5-kotlin" && it.name == "dokkaJavadocJar" }
+        .filter { it.project.name != "firefly-kotlin" && it.name == "dokkaJavadocJar" }
         .forEach { mustRunAfter(it) }
 }
 

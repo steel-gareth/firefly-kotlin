@@ -1,28 +1,28 @@
-# Emcees Prod Testing 5 Kotlin API Library
+# Firefly Kotlin API Library
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin)](https://central.sonatype.com/artifact/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1)
-[![javadoc](https://javadoc.io/badge2/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1)
+[![Maven Central](https://img.shields.io/maven-central/v/com.firefly.api/firefly-kotlin)](https://central.sonatype.com/artifact/com.firefly.api/firefly-kotlin/0.0.1)
+[![javadoc](https://javadoc.io/badge2/com.firefly.api/firefly-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1)
 
-The Emcees Prod Testing 5 Kotlin SDK provides convenient access to the [Emcees Prod Testing 5 REST API](https://firefly-iii.org) from applications written in Kotlin.
+The Firefly Kotlin SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in Kotlin.
 
 It is generated with [Stainless](https://www.stainless.com/).
 
-The REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.configure_me_emcees_prod_testing_5.api/emcees-prod-testing-5-kotlin/0.0.1).
+The REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1).
 
 ## Installation
 
 ### Gradle
 
 ```kotlin
-implementation("com.CONFIGURE_ME_emcees_prod_testing_5.api:emcees-prod-testing-5-kotlin:0.0.1")
+implementation("com.firefly.api:firefly-kotlin:0.0.1")
 ```
 
 ### Maven
 
 ```xml
 <dependency>
-  <groupId>com.CONFIGURE_ME_emcees_prod_testing_5.api</groupId>
-  <artifactId>emcees-prod-testing-5-kotlin</artifactId>
+  <groupId>com.firefly.api</groupId>
+  <artifactId>firefly-kotlin</artifactId>
   <version>0.0.1</version>
 </dependency>
 ```
@@ -34,14 +34,14 @@ This library requires Java 8 or later.
 ## Usage
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
-// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
+// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties
+// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables
+val client: FireflyClient = FireflyOkHttpClient.fromEnv()
 
 val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()
 ```
@@ -51,32 +51,32 @@ val response: List<AutocompleteListAccountsResponse> = client.autocomplete().lis
 Configure the client using system properties or environment variables:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
-// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
+// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties
+// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables
+val client: FireflyClient = FireflyOkHttpClient.fromEnv()
 ```
 
 Or manually:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
+val client: FireflyClient = FireflyOkHttpClient.fromEnv()
 ```
 
 Or using a combination of the two approaches:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
-    // Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
-    // Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
+val client: FireflyClient = FireflyOkHttpClient.builder()
+    // Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties
+    // Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables
     .fromEnv()
     .bearerToken("My Bearer Token")
     .build()
@@ -84,10 +84,10 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 
 See this table for the available options:
 
-| Setter        | System property                  | Environment variable                 | Required | Default value                        |
-| ------------- | -------------------------------- | ------------------------------------ | -------- | ------------------------------------ |
-| `bearerToken` | `emceesprodtesting5.bearerToken` | `EMCEES_PROD_TESTING_5_BEARER_TOKEN` | false    | -                                    |
-| `baseUrl`     | `emceesprodtesting5.baseUrl`     | `EMCEES_PROD_TESTING_5_BASE_URL`     | true     | `"https://demo.firefly-iii.org/api"` |
+| Setter        | System property       | Environment variable   | Required | Default value                        |
+| ------------- | --------------------- | ---------------------- | -------- | ------------------------------------ |
+| `bearerToken` | `firefly.bearerToken` | `FIREFLY_BEARER_TOKEN` | false    | -                                    |
+| `baseUrl`     | `firefly.baseUrl`     | `FIREFLY_BASE_URL`     | true     | `"https://demo.firefly-iii.org/api"` |
 
 System properties take precedence over environment variables.
 
@@ -100,9 +100,9 @@ System properties take precedence over environment variables.
 To temporarily use a modified client configuration, while reusing the same connection and thread pools, call `withOptions()` on any client or service:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
+import com.firefly.api.client.FireflyClient
 
-val clientWithOptions: EmceesProdTesting5Client = client.withOptions {
+val clientWithOptions: FireflyClient = client.withOptions {
     it.baseUrl("https://example.com")
     it.maxRetries(42)
 }
@@ -112,7 +112,7 @@ The `withOptions()` method does not affect the original client or service.
 
 ## Requests and responses
 
-To send a request to the Emcees Prod Testing 5 API, build an instance of some `Params` class and pass it to the corresponding client method. When the response is received, it will be deserialized into an instance of a Kotlin class.
+To send a request to the Firefly API, build an instance of some `Params` class and pass it to the corresponding client method. When the response is received, it will be deserialized into an instance of a Kotlin class.
 
 For example, `client.autocomplete().listAccounts(...)` should be called with an instance of `AutocompleteListAccountsParams`, and it will return an instance of `List<AutocompleteListAccountsResponse>`.
 
@@ -129,14 +129,14 @@ Because each class is immutable, builder modification will _never_ affect alread
 The default client is synchronous. To switch to asynchronous execution, call the `async()` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
-// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.fromEnv()
+// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties
+// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables
+val client: FireflyClient = FireflyOkHttpClient.fromEnv()
 
 val response: List<AutocompleteListAccountsResponse> = client.async().autocomplete().listAccounts()
 ```
@@ -144,14 +144,14 @@ val response: List<AutocompleteListAccountsResponse> = client.async().autocomple
 Or create an asynchronous client from the beginning:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5ClientAsync
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClientAsync
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.client.FireflyClientAsync
+import com.firefly.api.client.okhttp.FireflyOkHttpClientAsync
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
-// Configures using the `emceesprodtesting5.bearerToken` and `emceesprodtesting5.baseUrl` system properties
-// Or configures using the `EMCEES_PROD_TESTING_5_BEARER_TOKEN` and `EMCEES_PROD_TESTING_5_BASE_URL` environment variables
-val client: EmceesProdTesting5ClientAsync = EmceesProdTesting5OkHttpClientAsync.fromEnv()
+// Configures using the `firefly.bearerToken` and `firefly.baseUrl` system properties
+// Or configures using the `FIREFLY_BEARER_TOKEN` and `FIREFLY_BASE_URL` environment variables
+val client: FireflyClientAsync = FireflyOkHttpClientAsync.fromEnv()
 
 val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts()
 ```
@@ -162,11 +162,11 @@ The asynchronous client supports the same options as the synchronous one, except
 
 The SDK defines methods that return binary responses, which are used for API responses that shouldn't necessarily be parsed, like non-JSON data.
 
-These methods return [`HttpResponse`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpResponse.kt):
+These methods return [`HttpResponse`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpResponse.kt):
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.http.HttpResponse
-import com.configure_me_emcees_prod_testing_5.api.models.data.export.ExportExportAccountsParams
+import com.firefly.api.core.http.HttpResponse
+import com.firefly.api.models.data.export.ExportExportAccountsParams
 
 val response: HttpResponse = client.data().export().exportAccounts()
 ```
@@ -205,10 +205,10 @@ The SDK defines methods that deserialize responses into instances of Kotlin clas
 To access this data, prefix any HTTP method call on a client or service with `withRawResponse()`:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.http.Headers
-import com.configure_me_emcees_prod_testing_5.api.core.http.HttpResponseFor
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.core.http.Headers
+import com.firefly.api.core.http.HttpResponseFor
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
 val response: HttpResponseFor<List<AutocompleteListAccountsResponse>> = client.autocomplete().withRawResponse().listAccounts()
 
@@ -219,7 +219,7 @@ val headers: Headers = response.headers()
 You can still deserialize the response into an instance of a Kotlin class if needed:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
 val parsedResponse: List<AutocompleteListAccountsResponse> = response.parse()
 ```
@@ -228,49 +228,49 @@ val parsedResponse: List<AutocompleteListAccountsResponse> = response.parse()
 
 The SDK throws custom unchecked exception types:
 
-- [`EmceesProdTesting5ServiceException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5ServiceException.kt): Base class for HTTP errors. See this table for which exception subclass is thrown for each HTTP status code:
+- [`FireflyServiceException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyServiceException.kt): Base class for HTTP errors. See this table for which exception subclass is thrown for each HTTP status code:
 
-  | Status | Exception                                                                                                                                                               |
-  | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | 400    | [`BadRequestException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/BadRequestException.kt)                     |
-  | 401    | [`UnauthorizedException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnauthorizedException.kt)                 |
-  | 403    | [`PermissionDeniedException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/PermissionDeniedException.kt)         |
-  | 404    | [`NotFoundException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/NotFoundException.kt)                         |
-  | 422    | [`UnprocessableEntityException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnprocessableEntityException.kt)   |
-  | 429    | [`RateLimitException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/RateLimitException.kt)                       |
-  | 5xx    | [`InternalServerException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/InternalServerException.kt)             |
-  | others | [`UnexpectedStatusCodeException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/UnexpectedStatusCodeException.kt) |
+  | Status | Exception                                                                                                                      |
+  | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+  | 400    | [`BadRequestException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/BadRequestException.kt)                     |
+  | 401    | [`UnauthorizedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnauthorizedException.kt)                 |
+  | 403    | [`PermissionDeniedException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/PermissionDeniedException.kt)         |
+  | 404    | [`NotFoundException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/NotFoundException.kt)                         |
+  | 422    | [`UnprocessableEntityException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnprocessableEntityException.kt)   |
+  | 429    | [`RateLimitException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/RateLimitException.kt)                       |
+  | 5xx    | [`InternalServerException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/InternalServerException.kt)             |
+  | others | [`UnexpectedStatusCodeException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/UnexpectedStatusCodeException.kt) |
 
-- [`EmceesProdTesting5IoException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5IoException.kt): I/O networking errors.
+- [`FireflyIoException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyIoException.kt): I/O networking errors.
 
-- [`EmceesProdTesting5RetryableException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5RetryableException.kt): Generic error indicating a failure that could be retried by the client.
+- [`FireflyRetryableException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyRetryableException.kt): Generic error indicating a failure that could be retried by the client.
 
-- [`EmceesProdTesting5InvalidDataException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5InvalidDataException.kt): Failure to interpret successfully parsed data. For example, when accessing a property that's supposed to be required, but the API unexpectedly omitted it from the response.
+- [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt): Failure to interpret successfully parsed data. For example, when accessing a property that's supposed to be required, but the API unexpectedly omitted it from the response.
 
-- [`EmceesProdTesting5Exception`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5Exception.kt): Base class for all exceptions. Most errors will result in one of the previously mentioned ones, but completely generic errors may be thrown using the base class.
+- [`FireflyException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyException.kt): Base class for all exceptions. Most errors will result in one of the previously mentioned ones, but completely generic errors may be thrown using the base class.
 
 ## Logging
 
-Enable logging by setting the `EMCEES_PROD_TESTING_5_LOG` environment variable to `info`:
+Enable logging by setting the `FIREFLY_LOG` environment variable to `info`:
 
 ```sh
-export EMCEES_PROD_TESTING_5_LOG=info
+export FIREFLY_LOG=info
 ```
 
 Or to `debug` for more verbose logging:
 
 ```sh
-export EMCEES_PROD_TESTING_5_LOG=debug
+export FIREFLY_LOG=debug
 ```
 
 Or configure the client manually using the `logLevel` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.core.LogLevel
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
+import com.firefly.api.core.LogLevel
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .logLevel(LogLevel.INFO)
     .build()
@@ -278,7 +278,7 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 
 ## ProGuard and R8
 
-Although the SDK uses reflection, it is still usable with [ProGuard](https://github.com/Guardsquare/proguard) and [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because `emcees-prod-testing-5-kotlin-core` is published with a [configuration file](emcees-prod-testing-5-kotlin-core/src/main/resources/META-INF/proguard/emcees-prod-testing-5-kotlin-core.pro) containing [keep rules](https://www.guardsquare.com/manual/configuration/usage).
+Although the SDK uses reflection, it is still usable with [ProGuard](https://github.com/Guardsquare/proguard) and [R8](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) because `firefly-kotlin-core` is published with a [configuration file](firefly-kotlin-core/src/main/resources/META-INF/proguard/firefly-kotlin-core.pro) containing [keep rules](https://www.guardsquare.com/manual/configuration/usage).
 
 ProGuard and R8 should automatically detect and use the published rules, but you can also manually copy the keep rules if necessary.
 
@@ -288,7 +288,7 @@ The SDK depends on [Jackson](https://github.com/FasterXML/jackson) for JSON seri
 
 The SDK throws an exception if it detects an incompatible Jackson version at runtime (e.g. if the default version was overridden in your Maven or Gradle config).
 
-If the SDK threw an exception, but you're _certain_ the version is compatible, then disable the version check using the `checkJacksonVersionCompatibility` on [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt).
+If the SDK threw an exception, but you're _certain_ the version is compatible, then disable the version check using the `checkJacksonVersionCompatibility` on [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt).
 
 > [!CAUTION]
 > We make no guarantee that the SDK works correctly when the Jackson version check is disabled.
@@ -314,10 +314,10 @@ The API may also explicitly instruct the SDK to retry or not retry a request.
 To set a custom number of retries, configure the client using the `maxRetries` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .maxRetries(4)
     .build()
@@ -330,7 +330,7 @@ Requests time out after 1 minute by default.
 To set a custom timeout, configure the method call using the `timeout` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
 val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().timeout(Duration.ofSeconds(30)).build())
 ```
@@ -338,11 +338,11 @@ val response: List<AutocompleteListAccountsResponse> = client.autocomplete().lis
 Or configure the default for all method calls at the client level:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 import java.time.Duration
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .timeout(Duration.ofSeconds(30))
     .build()
@@ -353,12 +353,12 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 To route requests through a proxy, configure the client using the `proxy` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 import java.net.InetSocketAddress
 import java.net.Proxy
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .proxy(Proxy(
       Proxy.Type.HTTP, InetSocketAddress(
@@ -371,11 +371,11 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 If the proxy responds with `407 Proxy Authentication Required`, supply credentials by also configuring `proxyAuthenticator`:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
-import com.configure_me_emcees_prod_testing_5.api.core.http.ProxyAuthenticator
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
+import com.firefly.api.core.http.ProxyAuthenticator
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .proxy(...)
     // Or a custom implementation of `ProxyAuthenticator`.
@@ -388,11 +388,11 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 To customize the underlying OkHttp connection pool, configure the client using the `maxIdleConnections` and `keepAliveDuration` methods:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 import java.time.Duration
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     // If `maxIdleConnections` is set, then `keepAliveDuration` must be set, and vice versa.
     .maxIdleConnections(10)
@@ -411,10 +411,10 @@ If both options are unset, OkHttp's default connection pool settings are used.
 To configure how HTTPS connections are secured, configure the client using the `sslSocketFactory`, `trustManager`, and `hostnameVerifier` methods:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     // If `sslSocketFactory` is set, then `trustManager` must be set, and vice versa.
     .sslSocketFactory(yourSSLSocketFactory)
@@ -428,10 +428,10 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 The SDK sends requests to the production by default. To send requests to a different environment, configure the client like so:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .environment1()
     .build()
@@ -441,15 +441,15 @@ val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
 
 The SDK consists of three artifacts:
 
-- `emcees-prod-testing-5-kotlin-core`
+- `firefly-kotlin-core`
   - Contains core SDK logic
   - Does not depend on [OkHttp](https://square.github.io/okhttp)
-  - Exposes [`EmceesProdTesting5Client`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5Client.kt), [`EmceesProdTesting5ClientAsync`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsync.kt), [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt), and [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), all of which can work with any HTTP client
-- `emcees-prod-testing-5-kotlin-client-okhttp`
+  - Exposes [`FireflyClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClient.kt), [`FireflyClientAsync`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsync.kt), [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt), and [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), all of which can work with any HTTP client
+- `firefly-kotlin-client-okhttp`
   - Depends on [OkHttp](https://square.github.io/okhttp)
-  - Exposes [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) and [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), which provide a way to construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) and [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), respectively, using OkHttp
-- `emcees-prod-testing-5-kotlin`
-  - Depends on and exposes the APIs of both `emcees-prod-testing-5-kotlin-core` and `emcees-prod-testing-5-kotlin-client-okhttp`
+  - Exposes [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) and [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), which provide a way to construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) and [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), respectively, using OkHttp
+- `firefly-kotlin`
+  - Depends on and exposes the APIs of both `firefly-kotlin-core` and `firefly-kotlin-client-okhttp`
   - Does not have its own logic
 
 This structure allows replacing the SDK's default HTTP client without pulling in unnecessary dependencies.
@@ -461,17 +461,17 @@ This structure allows replacing the SDK's default HTTP client without pulling in
 
 To use a customized `OkHttpClient`:
 
-1. Replace your [`emcees-prod-testing-5-kotlin` dependency](#installation) with `emcees-prod-testing-5-kotlin-core`
-2. Copy `emcees-prod-testing-5-kotlin-client-okhttp`'s [`OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/OkHttpClient.kt) class into your code and customize it
-3. Construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) or [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), similarly to [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), using your customized client
+1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`
+2. Copy `firefly-kotlin-client-okhttp`'s [`OkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/OkHttpClient.kt) class into your code and customize it
+3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your customized client
 
 ### Completely custom HTTP client
 
 To use a completely custom HTTP client:
 
-1. Replace your [`emcees-prod-testing-5-kotlin` dependency](#installation) with `emcees-prod-testing-5-kotlin-core`
-2. Write a class that implements the [`HttpClient`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/http/HttpClient.kt) interface
-3. Construct [`EmceesProdTesting5ClientImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientImpl.kt) or [`EmceesProdTesting5ClientAsyncImpl`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/EmceesProdTesting5ClientAsyncImpl.kt), similarly to [`EmceesProdTesting5OkHttpClient`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClient.kt) or [`EmceesProdTesting5OkHttpClientAsync`](emcees-prod-testing-5-kotlin-client-okhttp/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/client/okhttp/EmceesProdTesting5OkHttpClientAsync.kt), using your new client class
+1. Replace your [`firefly-kotlin` dependency](#installation) with `firefly-kotlin-core`
+2. Write a class that implements the [`HttpClient`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/http/HttpClient.kt) interface
+3. Construct [`FireflyClientImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientImpl.kt) or [`FireflyClientAsyncImpl`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/client/FireflyClientAsyncImpl.kt), similarly to [`FireflyOkHttpClient`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClient.kt) or [`FireflyOkHttpClientAsync`](firefly-kotlin-client-okhttp/src/main/kotlin/com/firefly/api/client/okhttp/FireflyOkHttpClientAsync.kt), using your new client class
 
 ## Undocumented API functionality
 
@@ -482,8 +482,8 @@ The SDK is typed for convenient usage of the documented API. However, it also su
 To set undocumented parameters, call the `putAdditionalHeader`, `putAdditionalQueryParam`, or `putAdditionalBodyProperty` methods on any `Params` class:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.core.JsonValue
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
 
 val params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder()
     .putAdditionalHeader("Secret-Header", "42")
@@ -494,18 +494,18 @@ val params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.buil
 
 These can be accessed on the built object later using the `_additionalHeaders()`, `_additionalQueryParams()`, and `_additionalBodyProperties()` methods.
 
-To set a documented parameter or property to an undocumented or not yet supported _value_, pass a [`JsonValue`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) object to its setter:
+To set a documented parameter or property to an undocumented or not yet supported _value_, pass a [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) object to its setter:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
 
 val params: AutocompleteListAccountsParams = AutocompleteListAccountsParams.builder().build()
 ```
 
-The most straightforward way to create a [`JsonValue`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt) is using its `from(...)` method:
+The most straightforward way to create a [`JsonValue`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt) is using its `from(...)` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
+import com.firefly.api.core.JsonValue
 
 // Create primitive JSON values
 val nullValue: JsonValue = JsonValue.from(null)
@@ -539,12 +539,12 @@ val complexValue: JsonValue = JsonValue.from(mapOf(
 
 Normally a `Builder` class's `build` method will throw [`IllegalStateException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html) if any required parameter or property is unset.
 
-To forcibly omit a required parameter or property, pass [`JsonMissing`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/core/Values.kt):
+To forcibly omit a required parameter or property, pass [`JsonMissing`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/core/Values.kt):
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.JsonMissing
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsParams
-import com.configure_me_emcees_prod_testing_5.api.models.chart.account.AccountRetrieveOverviewParams
+import com.firefly.api.core.JsonMissing
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsParams
+import com.firefly.api.models.chart.account.AccountRetrieveOverviewParams
 import java.time.LocalDate
 
 val params: AutocompleteListAccountsParams = AccountRetrieveOverviewParams.builder()
@@ -558,10 +558,10 @@ val params: AutocompleteListAccountsParams = AccountRetrieveOverviewParams.build
 To access undocumented response properties, call the `_additionalProperties()` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.JsonBoolean
-import com.configure_me_emcees_prod_testing_5.api.core.JsonNull
-import com.configure_me_emcees_prod_testing_5.api.core.JsonNumber
-import com.configure_me_emcees_prod_testing_5.api.core.JsonValue
+import com.firefly.api.core.JsonBoolean
+import com.firefly.api.core.JsonNull
+import com.firefly.api.core.JsonNumber
+import com.firefly.api.core.JsonValue
 
 val additionalProperties: Map<String, JsonValue> = client.accounts().create(params)._additionalProperties()
 val secretPropertyValue: JsonValue = additionalProperties.get("secretProperty")
@@ -578,7 +578,7 @@ val result = when (secretPropertyValue) {
 To access a property's raw JSON value, which may be undocumented, call its `_` prefixed method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.core.JsonField
+import com.firefly.api.core.JsonField
 
 val name: JsonField<String> = client.accounts().create(params)._name()
 
@@ -600,14 +600,14 @@ if (name.isMissing()) {
 
 In rare cases, the API may return a response that doesn't match the expected type. For example, the SDK may expect a property to contain a `String`, but the API could return something else.
 
-By default, the SDK will not throw an exception in this case. It will throw [`EmceesProdTesting5InvalidDataException`](emcees-prod-testing-5-kotlin-core/src/main/kotlin/com/configure_me_emcees_prod_testing_5/api/errors/EmceesProdTesting5InvalidDataException.kt) only if you directly access the property.
+By default, the SDK will not throw an exception in this case. It will throw [`FireflyInvalidDataException`](firefly-kotlin-core/src/main/kotlin/com/firefly/api/errors/FireflyInvalidDataException.kt) only if you directly access the property.
 
 Validating the response is _not_ forwards compatible with new types from the API for existing fields.
 
 If you would still prefer to check that the response is completely well-typed upfront, then either call `validate()`:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.accounts.AccountSingle
+import com.firefly.api.models.accounts.AccountSingle
 
 val accountSingle: AccountSingle = client.accounts().create(params).validate()
 ```
@@ -615,7 +615,7 @@ val accountSingle: AccountSingle = client.accounts().create(params).validate()
 Or configure the method call to validate the response using the `responseValidation` method:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.models.autocomplete.AutocompleteListAccountsResponse
+import com.firefly.api.models.autocomplete.AutocompleteListAccountsResponse
 
 val response: List<AutocompleteListAccountsResponse> = client.autocomplete().listAccounts(RequestOptions.builder().responseValidation(true).build())
 ```
@@ -623,10 +623,10 @@ val response: List<AutocompleteListAccountsResponse> = client.autocomplete().lis
 Or configure the default for all method calls at the client level:
 
 ```kotlin
-import com.configure_me_emcees_prod_testing_5.api.client.EmceesProdTesting5Client
-import com.configure_me_emcees_prod_testing_5.api.client.okhttp.EmceesProdTesting5OkHttpClient
+import com.firefly.api.client.FireflyClient
+import com.firefly.api.client.okhttp.FireflyOkHttpClient
 
-val client: EmceesProdTesting5Client = EmceesProdTesting5OkHttpClient.builder()
+val client: FireflyClient = FireflyOkHttpClient.builder()
     .fromEnv()
     .responseValidation(true)
     .build()

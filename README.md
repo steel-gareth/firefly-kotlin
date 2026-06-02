@@ -1,7 +1,11 @@
 # Firefly Kotlin API Library
 
+<!-- x-release-please-start-version -->
+
 [![Maven Central](https://img.shields.io/maven-central/v/com.firefly.api/firefly-kotlin)](https://central.sonatype.com/artifact/com.firefly.api/firefly-kotlin/0.0.1)
 [![javadoc](https://javadoc.io/badge2/com.firefly.api/firefly-kotlin/0.0.1/javadoc.svg)](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1)
+
+<!-- x-release-please-end -->
 
 The Firefly Kotlin SDK provides convenient access to the [Firefly REST API](https://firefly-iii.org) from applications written in Kotlin.
 
@@ -16,9 +20,15 @@ Use the Firefly MCP Server to enable AI assistants to interact with this API, al
 
 > Note: You may need to set environment variables in your MCP client.
 
+<!-- x-release-please-start-version -->
+
 The REST API documentation can be found on [firefly-iii.org](https://firefly-iii.org). KDocs are available on [javadoc.io](https://javadoc.io/doc/com.firefly.api/firefly-kotlin/0.0.1).
 
+<!-- x-release-please-end -->
+
 ## Installation
+
+<!-- x-release-please-start-version -->
 
 ### Gradle
 
@@ -35,6 +45,8 @@ implementation("com.firefly.api:firefly-kotlin:0.0.1")
   <version>0.0.1</version>
 </dependency>
 ```
+
+<!-- x-release-please-end -->
 
 ## Requirements
 
@@ -679,4 +691,4 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/emcees-prod-testing-5-kotlin/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/steel-gareth/firefly-kotlin/issues) with questions, bugs, or suggestions.

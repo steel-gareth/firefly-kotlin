@@ -27,9 +27,9 @@ configure<PublishingExtension> {
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/stainless-sdks/emcees-prod-testing-5-kotlin.git")
-                    developerConnection.set("scm:git:git://github.com/stainless-sdks/emcees-prod-testing-5-kotlin.git")
-                    url.set("https://github.com/stainless-sdks/emcees-prod-testing-5-kotlin")
+                    connection.set("scm:git:git://github.com/steel-gareth/firefly-kotlin.git")
+                    developerConnection.set("scm:git:git://github.com/steel-gareth/firefly-kotlin.git")
+                    url.set("https://github.com/steel-gareth/firefly-kotlin")
                 }
 
                 versionMapping {
